@@ -25,12 +25,20 @@ def hangman():
            print(f"Sorry, the letter {guessed_letter} is not in the word")
            print(f"You have {attempts} attempts left.")
        
-       if guessed_letters in random_word_to_guess:
+       if guessed_letter in random_word_to_guess:
            print(f"Good job! The letter {guessed_letter} is in the word")
 
        if attempts == 0:
            print(f"Sorry you have run out of attempts :(")
            print(f"The word was {random_word_to_guess}")
+           restart = input("Press 'Enter' to restart ot type 'exit' to exit the game: ").lower()
+           if restart == "exit":
+               print("That was fun! Until next time!")
+               break
+       
+
+       
+       
 
 
 hangman()
