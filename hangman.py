@@ -11,7 +11,11 @@ def hangman():
        guessed_letter = input("Please guess a letter:").lower()
        
        if not guessed_letter.isalpha() or len(guessed_letter) != 1:
-            print("Please add a valid letter (only a single alphabetic character).")
+            print("Please type a valid alphabetic character.")
             continue
+       if guessed_letter in guessed_letters:
+           print(f"You have already guessed the letter {guessed_letter}")
+           continue
+       guessed_letters.append(guessed_letter)
 
 hangman()
