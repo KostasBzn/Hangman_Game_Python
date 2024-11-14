@@ -1,7 +1,7 @@
 import random
 
 def hangman():
-    words = ["python", "hangman", "programming", "development", "challenge", "bootcamp", "winter"]
+    words = ["python", "chair", "programming", "berlin", "laptop", "bootcamp", "winter"]
     random_word_to_guess = random.choice(words)
     guessed_letters = []
     attempts = 6
@@ -27,5 +27,10 @@ def hangman():
        
        if guessed_letters in random_word_to_guess:
            print(f"Good job! The letter {guessed_letter} is in the word")
+
+       if attempts == 0:
+           print(f"Sorry you have run out of attempts :(")
+           print(f"The word was {random_word_to_guess}")
+
 
 hangman()
