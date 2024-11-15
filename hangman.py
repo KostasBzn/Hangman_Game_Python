@@ -6,7 +6,7 @@ def hangman():
     word_to_guess = "_"*len(random_word_to_guess)
     guessed_letters = []
     attempts = 6
-    print("Welcome to Hangman!")
+    print("**Welcome to Hangman!**")
     print("Try to guess the word..you have 6 wrong attempts!\n")
     while attempts > 0:
        print("Progress: ", word_to_guess)
