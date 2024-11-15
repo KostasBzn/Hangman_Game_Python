@@ -43,8 +43,8 @@ def hangman():
        if attempts == 0:
            print(f"Sorry you have run out of attempts :(")
            print(f"The word was {random_word_to_guess}")
-           restart = input("Press 'Enter' to restart ot type 'exit' to exit the game: ").lower()
-           if restart == "exit":
+           exit = input("Press 'Enter' to exit the game")
+           if exit == "":
                print("That was fun! Until next time!")
                break
            
