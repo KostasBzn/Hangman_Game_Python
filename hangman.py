@@ -26,14 +26,11 @@ def hangman():
        if guessed_letter in random_word_to_guess:
             print(f"Good job! The letter {guessed_letter} is in the word\n")
 
-            word_to_guess_list = list(word_to_guess) ##refactor this logic
-
             for i in range(0, len(random_word_to_guess)):
               if random_word_to_guess[i] == guessed_letter:
-                word_to_guess_list[i] = guessed_letter  
+                 word_to_guess = word_to_guess[:i] + guessed_letter + word_to_guess[i + 1:]
 
-        
-            word_to_guess = ''.join(word_to_guess_list) ##until here
+                
             
             if "_" not in word_to_guess:
                 print(f"Congratulations! You won! The word is {random_word_to_guess}")
