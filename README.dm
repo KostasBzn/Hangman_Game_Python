@@ -3,11 +3,16 @@
 --My first small and well known game starting my jurney in Python--
 ## Languages and Libraries Used
 [Python]
+
 ## Key Learnings
-[Reflect on the main skills you practiced and insights gained from completing the project. Do not
-limit them to technical skills, remember as a Data Scientist a core part of your job is
-communicating technical insights to non-technical audiences.]
+[First experience with Python
+If conditions implimentation
+Debug - test the code
+Messages through the game play]
+
 ## Challenges Overcame
-[Share any challenges encountered during the project and how you overcame them.]
+[Input validation
+tracking the already guessed letters]
+
 ## Additional Reflections
-[Feel free to add any additional reflections or insights gained from working on this project.]
+[This project was a fun and it gave me the confidence to tackle more complex projects]
